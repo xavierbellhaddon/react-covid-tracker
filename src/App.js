@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./App.module.css";
 import { fetchData } from "./api";
 import { Cards, Chart, CountryPicker } from "./components";
-import logo from './image/logo.png';
+import logo from './image/redirect.png';
 
 class App extends React.Component {
 
