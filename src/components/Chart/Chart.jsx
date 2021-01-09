@@ -37,9 +37,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
         scales: {
           xAxes: [
             {
-              ticks: {
-                reverse: true,
-              },
+              ticks: {},
             },
           ],
         },
