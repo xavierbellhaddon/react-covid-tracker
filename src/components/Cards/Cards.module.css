@@ -4,18 +4,19 @@
 
 .card {
     margin: 0 2% !important;
+    width: 300px;
 }
 
 .infected {
-    border-bottom: 10px solid #f1e53c;
+    border-bottom: 10px solid #3535eb;
 }
 
 .recovered {
-    border-bottom: 10px solid #327aff;
+    border-bottom: 10px solid #54c428;
 }
 
 .deaths {
-    border-bottom: 10px solid #c92b2b;
+    border-bottom: 10px solid #d42d17;
 }
 
 @media (max-width: 770px) {
