@@ -13,6 +13,7 @@
     "countup.js": "^2.0.7",
     "firebase": "^7.23.0",
     "firebase-tools": "^8.12.1",
+    "luxon": "^1.25.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.10.0",
     "react-countup": "^4.3.3",

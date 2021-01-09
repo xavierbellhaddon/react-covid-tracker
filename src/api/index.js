@@ -1,4 +1,5 @@
 import axios from "axios";
+import { DateTime } from "luxon";
 
 const url = "https://covid19.mathdro.id/api";
 
@@ -27,8 +28,9 @@ export const fetchDailyData = async () => {
     const modifiedData = data.map((dailyData) => ({
         confirmed: dailyData.positive, 
         deaths: dailyData.death,
-        date: dailyData.dateChecked
+        date: DateTime.fromISO(dailyData.dateChecked).toLocaleString(DateTime.DATE_FULL)
     }))
+
     return modifiedData;
   } catch (error) {
     return error;
