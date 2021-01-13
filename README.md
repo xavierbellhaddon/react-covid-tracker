@@ -1,3 +1,7 @@
+#COVID-19 Tracker
+
+This application displays global COVID-19 data. Select a country from the dropdown to view a bar graph showing infections, recoveries, and deaths in that region. Select "Global" to view a line chart that displays global daily data from the first reported incident.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
