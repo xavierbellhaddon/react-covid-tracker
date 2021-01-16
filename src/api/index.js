@@ -1,19 +1,18 @@
 import axios from "axios";
 import { DateTime } from "luxon";
 
-const url = "https://covid19.mathdro.id/api";
+const url = "https://corona.lmao.ninja/v2";
 
 export const fetchData = async (country) => {
-    let changeableURL = url;
+    let changeableURL = `${url}/all`;
     if (country) {
         changeableURL = `${url}/countries/${country}`
     }
   try {
     const {
-      data: { confirmed, recovered, deaths, lastUpdate },
+      data: { cases, recovered, deaths }
     } = await axios.get(changeableURL);
-
-    return { confirmed, recovered, deaths, lastUpdate };
+    return { cases, recovered, deaths };
   } catch (error) {
     return error;
   }
@@ -39,8 +38,8 @@ export const fetchDailyData = async () => {
 
 export const fetchCountries = async () => {
     try {
-        const { data: { countries }} = await axios.get(`${url}/countries`);
-        return countries.map((country) => country.name)
+        const { data } = await axios.get(`${url}/countries`);
+        return data.map((country) => country.country)
     } catch (error) {
         console.log(error)
     }
