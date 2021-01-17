@@ -61,7 +61,6 @@ import styles from "./Chart.module.css";
       options={{
         maintainAspectRatio: false,
         legend: { display: false },
-        title: { display: true, text: `Current state in ${country}` },
       }}
     />
   ) : null;
